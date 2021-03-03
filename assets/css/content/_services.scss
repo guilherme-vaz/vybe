@@ -1,0 +1,112 @@
+
+.services__container{
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.services__subtitle{
+    color: #404040;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.services__content{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.services__box{
+    border: 1px solid #7e7f833f;
+    margin-bottom: 1.5rem;
+}
+
+.services__box:last-child{
+    margin-bottom: 0;
+}
+
+.services-box__title{
+    font-size: $h2-mobile;
+    text-align: start;
+    font-weight: 700;
+    color: $title-color;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #7e7f833f;
+    padding: 2rem 2rem 2rem 1rem; 
+}
+
+.web-design:hover{
+    background-color: $web-design-color;
+    transition: .3s;
+}
+
+.web-development:hover {
+    background-color: $web-development-color;
+    transition: .3s;
+}
+
+.content-writing:hover{
+    background-color: $content-writing-color;
+    transition: .3s;
+}
+
+.website-maintance:hover{
+    background-color: $website-maintance-color;
+    transition: .3s;
+}
+
+.services-box__text{
+    color: $text-color;
+    line-height: 1.875rem;
+    padding: 2rem 2rem 2rem 1rem; 
+}
+
+@media screen and (min-width: 1024px){
+    // .services__container{
+    //     padding: 5rem 2.5rem 5rem 2.5rem;
+    // }
+
+    .services__box {
+        display: grid;
+        grid-template-columns: 45% 55%;
+    }
+
+    .box__title-container{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        
+    }
+
+    .services-box__title{
+       
+        font-size: $h1-tablet;
+        text-align: start;
+        border: none;
+        margin-bottom: 0;
+    }
+
+    .services-box__text{
+        line-height: normal;
+        padding: 2rem;
+        border-left: 1px solid #7e7f833f;
+    }
+
+}
+
+@media screen and (min-width: 1030px){
+    .services__container{
+        padding: 6rem 6rem 6rem 13.313rem;
+    }
+
+    .services-box__title {
+        padding: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .services-box__text{
+        padding: 3rem;
+    }
+}
+

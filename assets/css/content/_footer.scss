@@ -1,0 +1,284 @@
+.footer{
+    background-color: $menu-background;
+}
+
+.footer__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer__header-title{
+    font-size: $normal-font;
+    font-weight: 400;
+    text-align: center;
+    color: $white;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.footer__contact-popup{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    top: 0;
+    left: 0;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-active{
+    display: flex;
+}
+
+.footer__contact-form{
+    position: relative;
+    background-color: #fff;
+    padding: 3rem;
+    width: 95%;
+    height: 75%;
+    border-radius: .9rem;
+}
+
+
+.footer__contact-title{
+    font-size: $h1-mobile;
+    font-weight: 700;
+    color: $title-color;
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+.footer__contact-text{
+    font-size: 0.875rem;
+    color: $text-color;
+    text-align: left;
+    line-height: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+.footer__contact-input{
+    @include input($margin-bottom: 0.75rem)
+}
+
+.footer__contact-input::placeholder{
+    font-family: $body-font;
+    font-size: $normal-font;
+    color: $text-color;
+}
+
+.footer__contact-text-area{
+    @include text-area($margin-bottom: 0.75rem)
+}
+
+.footer__contact-text-area::placeholder{
+    font-family: $body-font;
+    font-size: $normal-font;
+    color: $text-color;
+}
+
+.footer__contact-img{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.footer__header-button{
+    color: $black;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.footer__body{
+    color: #8D8D8D;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white; 
+}
+
+.footer__content{
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.footer__content-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer__title{
+    margin-bottom: 1.575rem;
+    font-weight: 500;
+}
+
+.footer__link{
+    display: inline-block;
+    margin-bottom: .75rem;
+}
+
+.footer__social{
+    margin-right: 1rem;
+}
+
+.footer__copyright{
+    padding: 1rem;
+    color: $white;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 500px){
+    .footer__body{
+        padding: 5rem 2.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .footer__contact-form {
+        width: 50%;
+        height: 75%;
+    }
+
+    .footer__header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.875rem 2.5rem;
+    }
+
+    .footer__header-title{
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: initial;
+        flex: 3;
+    }
+
+    .footer__header-button{
+        flex: 1;
+    }
+
+    .footer__body{
+        padding: 5rem 2.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .footer__content-header{
+        align-items: flex-start;
+    }
+
+    .footer__content{
+        display: initial;
+    }
+
+    .footer__address{
+        visibility: initial;
+        margin-top: 0.75rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+
+    .footer__title{
+        margin-bottom: 2rem;//1.875rem;
+    }
+
+    .footer__link{
+        display: inline-block;
+        margin-bottom: 0;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 1030px){
+    .footer__container{
+        padding: 0rem 0rem 0rem 10rem;
+    }
+
+    .footer__contact-popup{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2px);
+        top: 0;
+        left: 0;
+
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-active{
+        display: flex;
+    }
+
+    .footer__contact-form{
+        position: relative;
+        background-color: #fff;
+        padding: 5rem;
+        width: 35%;
+        height: 85%;
+        border-radius: .9rem;
+    }
+
+    .footer__contact-title{
+        font-size: $h2-desktop;
+        font-weight: 700;
+        color: $title-color;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__contact-text{
+        font-size: 0.875rem;
+        color: $text-color;
+        text-align: left;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__contact-img{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        cursor: pointer;
+    }
+    
+    .footer__contact-input{
+        @include input
+    }
+
+    .footer__contact-text-area{
+        @include text-area
+    }
+
+    .footer__header-title{
+        font-size: 1.5rem;
+    }       
+    
+}
+

@@ -1,0 +1,19 @@
+@mixin input($margin-bottom: 2.25rem) {
+    padding: 0.813rem 0rem 0.813rem 1.375rem; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: $margin-bottom; 
+}
+
+@mixin text-area ($margin-bottom: 2rem){
+    width: 100%;
+    resize: none;
+    padding: 0.813rem 0rem 0.813rem 1.375rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: $margin-bottom;
+}
+
